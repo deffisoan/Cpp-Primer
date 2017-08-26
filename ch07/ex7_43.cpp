@@ -5,11 +5,11 @@
 //  Created by pezy on 11/20/14.
 //
 
-#include <vector> 
+#include <vector>
 
 class NoDefault {
 public:
-    NoDefault(int i) { }
+    explicit NoDefault(int i) { }
 };
 
 class C {
@@ -22,7 +22,7 @@ private:
 int main()
 {
     C c;
-    
-    std::vector<C> vec(10); 
+
+    std::vector<C> vec(10);
     return 0;
 }
